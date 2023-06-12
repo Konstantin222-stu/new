@@ -1,0 +1,116 @@
+.why{
+    margin-top: 149px;
+    margin-bottom: 200px;
+}
+
+.why__content{
+    display: flex;
+    justify-content: center;
+}
+
+.why__imgs{
+    position: relative;
+
+}
+
+.why__imgs>img{
+    width: 352px; 
+    border-radius: 50px;   
+}
+
+.why__imgs::before{
+    top: 76%;
+    right: -30%;
+    position: absolute;
+    content: "";
+    width: 225px;
+    height: 285px;
+    background: url(../images/about2.jpg);
+    border-radius: 50px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+}
+
+.why__imgs::after{
+    top: 50%;
+    right: 50%;
+    position: absolute;
+    content: "";
+    width: 346px;
+    height: 231px;
+    background: url(../images/about3.jpg);
+    border-radius: 50px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+}
+
+.why__text{
+    margin-left: 200px;
+    width: 550px;
+
+}
+
+.why__text>.subtitle{
+    margin-bottom: 30px;
+}
+
+.why__text>.title{
+    margin-bottom: 36px;
+}
+
+.text{
+
+}
+
+@media (max-width:979px) {
+    .why__imgs::after{
+        display: none;
+    }
+
+    .why__text {
+        margin-left: 123px;
+    }
+    
+}
+
+@media (max-width:846px) {
+    .why__imgs::before{
+        display: none;
+    }
+
+    .why__text {
+        margin-left: 50px;
+    }
+    
+}
+
+@media (max-width:775px) {
+    .why__content {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-content: center;
+    }
+
+    .why__imgs {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    .why__text{
+        margin-left: 0px;
+        width: auto;
+    
+    }
+    
+}
+
+@media (max-width:580px) {
+    .why__text>.title {
+        font-size: 38px;
+    }
+    .why__imgs>img{
+        width: 290px;    
+    }
+}

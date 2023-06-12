@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #FFFAFB;
+}
+.wrap{
+    width: 90%;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+a{
+    font-family: 'Microsoft Yi Baiti';
+    font-family: 'Microsoft Yi Baiti';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.8);
+    opacity: 0.8;
+    text-decoration: none;
+}
+.title{
+    font-family: 'Times New Roman';
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 55px;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.title_white{
+    color: #fff;
+}
+
+.title_left{
+    text-align: left;
+}
+
+.title_question{
+    font-size: 32px;
+}
+
+.title_pink{
+    color: #FF7FAA;
+}
+
+@media (max-width:700px) {
+    .title{
+        font-size: 40px;
+    }
+}
+
+.text{
+    font-family: 'Microsoft Yi Baiti';
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.text_center{
+    text-align: center;
+}
+
+.text_left{
+    text-align: left;
+}
+
+.text_white{
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.text_black{
+    color: rgba(0, 0, 0, 0.8);
+}
+
+ul{
+    list-style: none;
+}

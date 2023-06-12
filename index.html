@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <div class="hero">
+        <header class="header">
+                <div class="header__content wrap">
+                    <nav class="nav">
+                        <div class="logo"><img src="images/logotip.png" alt="логотип"></div>
+                        <ul class="nav__list">
+                            <li><a  href="#service">Услуги</a></li>
+                            <li><a  href="#why">О нас</a></li>
+                            <li><a  href="#footer" >Контакты</a></li>
+                            <li><a  href="#form" >Обратная связь</a></li>
+                        </ul>
+                        <a href="#" class="menu-btn">
+                            <span></span>
+                        </a>
+                        
+                        <script>
+                            $('.menu-btn').on('click', function(e) {
+                                e.preventDefault();
+                                $(this).toggleClass('menu-btn_active');
+                                $('.nav__list_mob').toggleClass('nav__list_mob_active')
+                            });
+                        </script>
+                        
+                        
+                    </nav>
+                    <ul class="nav__list_mob">
+                        <li><a class="clear" href="#service">Услуги</a></li>
+                        <li><a class="clear" href="#why">О нас</a></li>
+                        <li><a class="clear" href="#footer">Контакты</a></li>
+                        <li><a class="clear" href="#form">Обратная связь</a></li>
+                    </ul>
+                    
+                </div>
+        </header>
+        <div class="hero__content wrap">
+            <div class="hero__text">
+                <h1 class="hero__title">
+                    Салон косметологии</br>
+                    Конфета
+                </h1>
+                <p class="desc">
+                    Мы сохраним вашу красоту и здоровье!
+                </p>
+                <span>
+                    <a href="#form" class="btn btn_pink">Обратный звонок</a>
+                    <a href="#why" class="btn">Узнать больше...</a>
+                </span>
+            </div>
+            <div class="hero__img"><img src="images/back_woman.png" alt="девушка"></div>
+        </div>
+    </div>
+    <div class="why" id="why">
+        <div class="why__content wrap">
+            <div class="why__imgs"><img src="images/about1.jpg" alt="доктор" srcset=""></div>
+            <div class="why__text">
+                <p class="subtitle">Почему мы?</p>
+                <h2 class="title title_left">
+                    Конфета —это
+                    </br>
+                    команда
+                    </br>
+                    профессионалов!
+                </h2>
+                <p class="text text_left text_black">В каждом направлении работают квалифицированные и 
+                    опытные специалисты, которые на протяжении долгих 
+                    лет оттачивают свое мастерство. Они знают обо всех 
+                    новинках и модных тенденциях бьюти-индустрии, и
+                    успешно применяют это на практике. В работе
+                    используются только высококачественные материалы и
+                    современное оборудование.
+                </br>
+                    Мастера салона всегда руководствуются пожеланиями 
+                    клиента, но в свою очередь могут предложить те 
+                    способы или технологии, благодаря которым можно 
+                    достичь лучших результатом.</p>
+            </div>
+        </div> 
+    </div>
+    <div class="advantages">
+        <div class="advantages__content wrap">
+            <p class="subtitle">Нам можно доверять!</p>
+                <h2 class="title">Преимущества</h2>
+                <div class="advantages__cards">
+                    <div class="advantages__card">
+                        <div class="card_img">
+                            <img src="images/1.png" alt="цены">
+                        </div>
+                        <h3 class="card__title">Доступные цены</h3>
+                        <p class="card__text">Большинство салонов косметологии в Ростове-на-Дону ставят завышенный ценник на услуги, что не всегда оправдано. Мы придерживаемся демократичной ценовой политики и хотим, чтобы красота была доступна каждому.</p>
+                    </div>
+                    <div class="advantages__card">
+                        <div class="card_img">
+                            <img src="images/2.png" alt="цены">
+                        </div>
+                        <h3 class="card__title">Уютная атмосфера и качественное обслуживание</h3>
+                        <p class="card__text">Наши специалисты имеют необходимое образование и опыт, что позволяет удовлетворять потребности даже самых требовательных клиентов.</p>
+                    </div>
+                    <div class="advantages__card">
+                        <div class="card_img">
+                            <img src="images/4.png" alt="цены">
+                        </div>
+                        <h3 class="card__title">Доступность</h3>
+                        <p class="card__text">Удобное месторасположение позволит Вам быстро и комфортно добраться как на автомобиле, так и общественным транспортом.</p>
+                    </div>
+                    <div class="advantages__card">
+                        <div class="card_img">
+                            <img src="imges/5.png" alt="цены">
+                        </div>
+                        <h3 class="card__title">Индивидуальный подход</h3>
+                        <p class="card__text">Мы не следуем шаблонам, ведь каждый человек обладает своей уникальной и неповторимой красотой. Мы применяем только те решения, которые помогут ее подчеркнуть.</p>
+                    </div>
+                    <div class="advantages__card">
+                        <div class="card_img">
+                            <img src="images/6.png" alt="цены">
+                        </div>
+                        <h3 class="card__title">Широкий спектр бьюти-услуг</h3>
+                        <p class="card__text">Мы производим регулярную уборку всех помещений, обрабатываем поверхности после каждого клиента, инструменты подвергаем тщательной многоэтапной стерилизации.</p>
+                    </div>
+                    <div class="advantages__card">
+                        <div class="card_img">
+                            <img src="images/33.png" alt="цены">
+                        </div>
+                        <h3 class="card__title">Забота о безопасности</h3>
+                        <p class="card__text">Мы предлагаем самые актуальные процедуры, современные методики и профессиональные средства, поэтому каждый сможет найти здесь то, что подойдет ему больше всего.</p>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <div class="price" id="service">
+        <div class="price__content wrap">
+            <p class="subtitle">ПРАЙС ЛИСТ</p>
+            <h2 class="title">ПРЕДОСТАВЛЯЕМЫЕ УСЛУГИ</h2>
+            <div class="price__services">
+                <div class="services__nav">
+                    <ul>
+                        <li><p class="link">Чистка лица</p></li>
+                        <li><p class="link" href="">Массаж лица</p></li>
+                        <li><p class="link" href="">Пилинг</p></li>
+                        <li><p class="link" href="">Уходоовые процедуры</p></li>
+                        <li><p class="link" href="">Аппаратные процедуры</p></li>
+                        <li><p class="link" href="">Брови/ресницы</p></li>
+                        <li><p class="link" href="">Эпиляция </p></li>
+                    </ul>
+                </div>
+                <div class="service__content_active s">
+                    <div class="price-list">
+                        <h3 class="title">ЧИСТКА ЛИЦА</h3>
+                        <div class="service">
+                            <h4 class="service__title">Комбинированная чистка</h4>
+                            <p class="service__price">3000.Руб</p>
+                        </div>
+                        <div class="service">
+                            <h4 class="service__title">Ультразвуковая чистка</h4>
+                            <p class="service__price">3000.Руб</p>
+                        </div>
+                        <div class="service">
+                            <h4 class="service__title">Механическая чистка</h4>
+                            <p class="service__price">3000.Руб</p>
+                        </div>
+                        <div class="service">
+                            <h4 class="service__title">Ваккумная чистка</h4>
+                            <p class="service__price">3000.Руб</p>
+                        </div>
+                    </div>
+                    <div class="service__img">
+                        <img src="images/service.png" alt="клиент">
+                    </div>
+                </div>
+                <div class="service__content s">
+                    <div class="price-list">
+                        <h3 class="title">Массаж</h3>
+                        <div class="service">
+                            <h4 class="service__title">Общий классический массаж</h4>
+                            <p class="service__price">1200.Руб</p>
+                        </div>
+                        <div class="service">
+                            <h4 class="service__title">Антицеллюлитный массаж</h4>
+                            <p class="service__price">1400.Руб</p>
+                        </div>
+                        <div class="service">
+                            <h4 class="service__title">Лимфодренажный массаж</h4>
+                            <p class="service__price">1100.руб</p>
+                        </div>
+                        <div class="service">
+                            <h4 class="service__title">Массаж лица миофасциальный/буккальный</h4>
+                            <p class="service__price">2000.Руб</p>
+                        </div>
+                    </div>
+                    <div class="service__img">
+                        <img src="images/222.png" alt="клиент">
+                    </div>
+                </div>
+                <div class="service__content s">
+                    <div class="price-list">
+                        <h3 class="title">Пилинг</h3>
+                        <div class="service">
+                            <h4 class="service__title">Гликолевый пилинг</h4>
+                            <p class="service__price">2500.Руб</p>
+                        </div>
+                        <div class="service">
+                            <h4 class="service__title">Молочный пилинг</h4>
+                            <p class="service__price">2500.Руб</p>
+                        </div>
+                        <div class="service">
+                            <h4 class="service__title">Азелаиновый пилинг</h4>
+                            <p class="service__price">3500.руб</p>
+                        </div>
+                        <div class="service">
+                            <h4 class="service__title">Пилинг Джесснера</h4>
+                            <p class="service__price">3500.Руб</p>
+                        </div>
+                    </div>
+                    <div class="service__img">
+                        <img src="images/111.jpg" alt="клиент">
+                    </div>
+                </div>
+                <div class="service__content s">
+                    <div class="price-list">
+                        <h3 class="title">Уходоовые процедуры</h3>
+                        <div class="service">
+                            <h4 class="service__title">Бинтовое обертывание</h4>
+                            <p class="service__price">4000.Руб</p>
+                        </div>
+                        <div class="service">
+                            <h4 class="service__title">Нанесение патчей для век</h4>
+                            <p class="service__price">1700.Руб</p>
+                        </div>
+                        <div class="service">
+                            <h4 class="service__title">Нанесение крем-пилинга</h4>
+                            <p class="service__price">1700.руб</p>
+                        </div>
+                        <div class="service">
+                            <h4 class="service__title">Нанесение сыворотки</h4>
+                            <p class="service__price">900.Руб</p>
+                        </div>
+                    </div>
+                    <div class="service__img">
+                        <img src="images/333.jpg" alt="клиент">
+                    </div>
+                </div>
+                <div class="service__content s">
+                    <div class="price-list">
+                        <h3 class="title">Аппаратные процедуры</h3>
+                        <div class="service">
+                            <h4 class="service__title">Аппаратный лифтинг и контуринг лица</h4>
+                            <p class="service__price">5000.Руб</p>
+                        </div>
+                        <div class="service">
+                            <h4 class="service__title">Фотоомоложение</h4>
+                            <p class="service__price">7500.Руб</p>
+                        </div>
+                        <div class="service">
+                            <h4 class="service__title">Кислородотерапия</h4>
+                            <p class="service__price">5000.руб</p>
+                        </div>
+                        <div class="service">
+                            <h4 class="service__title">Пилинг химический</h4>
+                            <p class="service__price">7500.Руб</p>
+                        </div>
+                    </div>
+                    <div class="service__img">
+                        <img src="images/444.png" alt="клиент">
+                    </div>
+                </div>
+                <div class="service__content s">
+                    <div class="price-list">
+                        <h3 class="title">Брови и ресницы</h3>
+                        <div class="service">
+                            <h4 class="service__title">Окрашивание бровей/ресниц</h4>
+                            <p class="service__price">1500.Руб</p>
+                        </div>
+                        <div class="service">
+                            <h4 class="service__title">Долговременная укладка бровей</h4>
+                            <p class="service__price">600.Руб</p>
+                        </div>
+                        <div class="service">
+                            <h4 class="service__title">Ламинирование ресниц</h4>
+                            <p class="service__price">3500.руб</p>
+                        </div>
+                        <div class="service">
+                            <h4 class="service__title">Снятие ресниц</h4>
+                            <p class="service__price">500.Руб</p>
+                        </div>
+                    </div>
+                    <div class="service__img">
+                        <img src="images/555.jpg" alt="клиент">
+                    </div>
+                </div>
+                <div class="service__content s">
+                    <div class="price-list">
+                        <h3 class="title">Эпиляция</h3>
+                        <div class="service">
+                            <h4 class="service__title">Классическое бикини</h4>
+                            <p class="service__price">2500.Руб</p>
+                        </div>
+                        <div class="service">
+                            <h4 class="service__title">Глубокое бикини</h4>
+                            <p class="service__price">4000.Руб</p>
+                        </div>
+                        <div class="service">
+                            <h4 class="service__title">Тотальное бикини</h4>
+                            <p class="service__price">5800.руб</p>
+                        </div>
+                        <div class="service">
+                            <h4 class="service__title">Участки тела</h4>
+                            <p class="service__price">От 500.Руб</p>
+                        </div>
+                    </div>
+                    <div class="service__img">
+                        <img src="images/312312.jpg" alt="клиент">
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <div class="promotion">
+        <div class="promotion__content wrap">
+            <p class="text text_white text_center">В салоне косметологии-Конфета Вы можете приборести подарочные сертификаты на любую услугу</p>
+        </div>
+    </div>
+   <div class="questions">
+    <div class="questions__content wrap">
+        <p class="subtitle">ПРАЙС ЛИСТ</p>
+        <h2 class="title">Вопросы и ответы</h2>
+        <div class="question">
+            <div class="question__title">
+                <p class="title_question title_pink">Какие инъекционные услуги предоставляем?</p>
+                <div class="arrow arrow-bottom"></div>
+            </div>
+            <div class="text text_black text_left q">
+                Инъекционная косметология уже не первый год занимает важное место среди процедур, за которыми обращаются наши пациенты. С возрастом кожа человека теряет свой тонус и привлекательность. Мы предлагаем своим клиентам большой спектр услуг для поддержки красивого и здорового внешнего вида. Среди них ярко выделяется инъекционная косметология. Она является нехирургическим и безопасным способом исправления определенных возрастных изменений. Кроме того, с ее помощью можно легко избавится от неких эстетических особенностей каждого человека.
+                Какие услуги предоставляем:
+                <ul>
+                    <li>мезотерапия;</li>
+                    <li>липолитики;</li>
+                    <li>ботулинотерапия;</li>
+                    <li>биорепарация;</li>
+                    <li>мезотерапия волосистой части головы;</li>
+                    <li>контурная пластика губ;</li>
+                    <li>контурная пластика скул, висков, подбородка, углов нижней челюсти, носослёзной борозды;</li>
+                    <li>векторный лифтинг.</li>
+                </ul>        
+            </div>
+        </div>
+        <div class="question">
+            <div class="question__title">
+                <p class="title_question title_pink">Какие инъекционные услуги предоставляем?</p>
+                <div class="arrow arrow-bottom"></div>
+            </div>
+            <div class="text text_black text_left q">
+                Лазерная эпиляция — процедура удаления волос с помощью воздействия импульсов лазерного излучения, разрушающие волосяной фолликул. Лазерная эпиляция проводится курсом, в который входит серия процедур с паузами между ними, чтобы уничтожить «проснувшиеся» волосяные луковицы.
+            </br>
+            </br>
+                Что нужно сделать
+                :за 2-3 недели до проведения лазерной эпиляции следует исключить все другие виды депиляции кроме бритья;
+                перед процедурой провести тщательное выбривание эпилируемой зоны ( избегать нанесения на выбритые зоны кремов, дезодорантов и пр.);
+                не пользоваться спиртосодержащими лосьонами/тониками за 3 дня до процедуры и 3 дня после проведения сеанса эпиляции;
+                за 10-14 дней до проведения процедуры нельзя посещать солярий или загорать под прямыми солнечными лучами;
+                за 14 дней до сеанса не принимать антибиотики тетрациклиновой группы.
+            </div>
+        </div>
+        <div class="question">
+            <div class="question__title">
+                <p class="title_question title_pink">Что такое криолиполиз?</p>
+                <div class="arrow arrow-bottom"></div>
+            </div>
+            <div class="text text_black text_left q">
+                Криолиполиз – это процедура аппаратного похудения. Под воздействием холода жировые клетки замораживаются и выводятся из организма естественным путём с помощью лимфатической системы. 
+                Это единственное решение от так называемых «жировых ловушек», которые возникают из-за генетических особенностей, без операции (липосакции) и без инъекций (липолитиков).
+                Во время процедуры на жировые отложения воздействует холод до минус 9 градусов (в зависимости от объемов жировых отложений подбирается длительность процедуры, от 50-90 минут, и градус воздействия). Клетки жировой ткани (адипоциты) не выдерживают воздействия холода и гибнут.
+            </div>
+        </div>        
+    </div>
+   </div>
+   <div class="form" id="form">
+    <div class="form__content wrap">
+        <div class="conteiner"></div>
+        <div class="form__img_mob">
+            <img src="images/form.jpg" alt="" srcset="">
+        </div>
+        <div class="form__form">
+            <h3 class="title text_white text_center">Записывайтесь на бесплатную консультацию</h3>
+            <form method="post" action="mail.php">
+                <span>
+                    <input type="text" name="name" placeholder="Имя...">
+                    <input type="tel" name="phone" placeholder="Телефон...">
+                </span>
+                <input type="text" name="text" maxlength="40" placeholder="Сообщение...">
+                <input type="submit" value="Обратный звонок">
+
+            </form>
+        </div>
+    </div>
+   </div>
+    <footer class="footer" id="footer">
+        <div class="footer__content wrap">
+            <h2 class="title title_white title_left">НАШИ КОНТАКТЫ</h2>
+            <div class="footer__section">
+                <div class="footer__nav">
+                    <h3 class="footer__title">Адрес</h3>
+                    <ul>
+                        <li><a href="">Ростов-на-Дону</br>
+                            ул.Еременко д 103</a></li>
+                    </ul>
+                </div>
+                <div class="footer__nav">
+                    <h3 class="footer__title">Телефон</h3>
+                    <ul>
+                        <li><a href="tel:+7(938)100-13-59">+7(938)100-13-59</a></li>
+                    </ul>
+                </div>
+                <div class="footer__nav">
+                    <h3 class="footer__title">Почта</h3>
+                    <ul>
+                        <li><a href="mailto:salon.konfeta@yandex.ru">salon.konfeta@yandex.ru</a></li>
+                    </ul>
+                </div>
+                <div class="footer__nav">
+                    <h3 class="footer__title">Время работы</h3>
+                    <ul>
+                        <li>вс: 10:00-17:00</li>
+                        <li>пн-сб: 10:00-21:00</li>
+                    </ul>
+                </div>
+                <div class="footer__nav footer__nav_soc">
+                    <h3 class="footer__title">Социальные сети</h3>
+                    <ul>
+                        <li><a href="#"><img src="images/inst.png" alt="inst"></a></li>
+                        <li><a href="#"><img src="images/vk.png" alt="vk"></a></li>
+                        <li><a href="#"><img src="images/yandex.png" alt="yandex"></a></li>
+                    </ul>
+                </div>
+                
+            </div>
+            <div class="copyright">© 2023  «Конфета» | Все права защищены</div>
+        </div>
+
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -41,6 +41,12 @@
     transform: rotate(-45deg); 
 }
 
+.list__questions li:before {
+    content:  "—";
+    position: relative;
+    left:     -5px;
+}
+
 @media (max-width:828px) {
     .questions__content{
         width: 500px;
